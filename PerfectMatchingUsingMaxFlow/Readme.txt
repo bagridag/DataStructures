@@ -1,0 +1,5 @@
+Input file is read from the user and extended into an node*node array, where node is 2n+2, including the source and the sink, where n is the number on the first line in input file. In the same way, a capacity array and a flow array was created. 
+
+All capacities are first initialized to zero. And i put a 1 in a capacity array if there was an edge between any nodes. I used Breadth first search and Fold Fulkerson algorithm to find the maximum flow between the source and the sink, the 0 node and (node-1)th node respectively. If the maximum flow was less than the number “n” -the number on the first line in input file- i gave the output of a zero array. Because if there was a perfect matching the maximum flow should be equal to “n”. 
+
+Finally, i hold the nodes in  pArray,  that was connected after the maxFlow algorithm. These were the routes that gave me perfect matches. I calculated the numbers that must be printed out on the output text file and between that range, i printed out the elements of pArray and the zero array(eArray). I called 2 print functions in an if else statement to control whether the output is the eArray or the pArray.
